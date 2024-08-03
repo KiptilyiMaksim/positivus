@@ -100,9 +100,6 @@ p {
 	cursor: pointer;
 	color: #000000;
 }
-.nav-list a:active {
-	color: #b9ff66;
-}
 .nav-list a:after {
 	background-color: #b9ff66;
 	display: block;
@@ -223,7 +220,7 @@ p {
 	color: #ffffff !important;
 }
 .card-dark a:hover {
-	color: aqua !important;
+	color: #a6a6a6 !important;
 }
 .card-dark:nth-child(6) span {
 	background-color: #b9ff66;
@@ -242,7 +239,7 @@ p {
 	color: #000000;
 }
 .services-info a:hover {
-	color: antiquewhite;
+	color: #a6a6a6;
 }
 .services-info svg {
 	vertical-align: middle;
@@ -325,6 +322,7 @@ p {
 	color: #b9ff66;
 	vertical-align: middle;
 	gap: 15px;
+	transition: 0.5s ease-in;
 }
 .studies-item a::after {
 	content: url(../img/studies/studies-icons/studies-link-icon.svg);
@@ -572,6 +570,7 @@ p {
 .swiper-slide-bottom h4 {
 	color: #b9ff66;
 	font-size: 20px;
+	font-weight: 500;
 }
 .swiper-slide-bottom p {
 	font-size: 18px;
@@ -664,7 +663,7 @@ p {
 .contact-main img {
 	position: absolute;
 	top: 64px;
-	right: -324px;
+	right: 0;
 }
 .contact-form {
 	max-width: 556px;
@@ -728,6 +727,7 @@ p {
 .contact-text input::placeholder {
 	font-size: 18px;
 	line-height: 23px;
+	color: #898989;
 }
 .contact-text label {
 	margin-bottom: 7px;
@@ -771,6 +771,7 @@ p {
 .footer,
 .footer a {
 	color: #ffffff;
+	transition: 0.5s ease-in;
 }
 .footer a:hover {
 	color: #e4e2e2;
