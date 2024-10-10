@@ -1,5 +1,36 @@
-const items = document.querySelectorAll(".accordion button");
+// BURGER
+// document.querySelector('.nav-burger').addEventListener('click', function () {
+// 	this.classList.toggle('nav-open');
+// 	document.querySelector('.nav').classList.toggle('open');
+// });
+// BURGER V2
+const menu = document.querySelector('.nav')
+const menuBtn = document.querySelector('.nav-burger')
 
+const body = document.body;
+
+if (menu && menuBtn) {
+	menuBtn.addEventListener('click', () => {
+		menu.classList.toggle('open')
+		menuBtn.classList.toggle('nav-open')
+		body.classList.toggle('lock')
+	})
+
+	menu.querySelectorAll('.nav-link').forEach(link => {
+		link.addEventListener('click', () => {
+			menu.classList.remove('open')
+			menuBtn.classList.remove('nav-open')
+			body.classList.remove('lock')
+		})
+	})
+}
+// STUDIES-SWIPER
+const swiperStudies = new Swiper(".studies-info", {
+	slidesPerView: "auto",
+	spaceBetween: 20,
+});
+// ACCORDEON
+const items = document.querySelectorAll(".accordion button");
 function toggleAccordion() {
 	const itemToggle = this.getAttribute('aria-expanded');
 	const parent = this.parentElement;
@@ -7,7 +38,6 @@ function toggleAccordion() {
 		item.setAttribute('aria-expanded', 'false');
 		item.parentElement.classList.remove('active');
 	});
-
 	if (itemToggle == 'false') {
 		this.setAttribute('aria-expanded', 'true');
 		parent.classList.add('active');
@@ -15,23 +45,46 @@ function toggleAccordion() {
 		parent.classList.remove('active');
 	}
 }
-
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-const swiper = new Swiper('.swiper', {
-	// Optional parameters,
-	slidesPerView: "auto",
+// SWIPER
+const swiperTestimination = new Swiper('.testimination-swiper', {
+	// Optional parameters
+	slidesPerView: 2,
+	spaceBetween: 50,
 	centeredSlides: true,
 	loop: true,
-	spaceBetween: 50,
-
-	// If we need pagination
+	grabCursor: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		639: {
+			slidesPerView: 1,
+		},
+		759: {
+			slidesPerView: 1.15,
+			spaceBetween: 15
+		},
+		991: {
+			slidesPerView: 1.5,
+		},
+		1099: {
+			slidesPerView: 1.7,
+			spaceBetween: 30
+		},
+		1159: {
+			slidesPerView: 1.9,
+			spaceBetween: 40
+		},
+		1239: {
+			slidesPerView: 2,
+			spaceBetween: 50
+		}
+	},
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
-
-	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
