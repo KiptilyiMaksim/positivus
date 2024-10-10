@@ -482,7 +482,6 @@
 		border-radius: 45px;
 		max-width: 350px;
 		min-height: 252px;
-		justify-content: flex-start;
 		row-gap: 20px;
 	}
 	/* ACCORDION */
@@ -795,7 +794,7 @@
 	}
 	/* TESTIMINATIONS */
 	.testimination-slide-main {
-		margin: 0px 1px;
+		margin: 0px 20px;
 	}
 	.testimination-slide-bottom {
 		margin-left: 60px;
