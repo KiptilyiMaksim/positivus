@@ -330,7 +330,7 @@ p {
 	border-radius: 14px;
 	border: 1px solid;
 	cursor: pointer;
-
+	transition: 0.5s ease-in;
 	line-height: 28px;
 }
 
