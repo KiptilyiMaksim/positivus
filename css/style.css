@@ -23,9 +23,6 @@ body {
 	padding: 0px 20px;
 	margin: 0 auto;
 }
-.logo {
-	width: 220px;
-}
 .button {
 	display: inline-block;
 	padding: 20px 35px;
@@ -93,6 +90,7 @@ p {
 .nav,
 .nav-list {
 	display: flex;
+	align-items: center;
 	gap: 40px;
 }
 .nav {
@@ -143,7 +141,7 @@ p {
 	bottom: 50%;
 	transform: rotate(45deg) translate(0, 50%);
 }
-.nav-list a {
+.nav-link {
 	display: inline-block;
 	text-align: center;
 	line-height: 1;
@@ -183,13 +181,12 @@ p {
 }
 .about-info h1,
 .about-info p {
-	margin-bottom: 35px;
+	margin-bottom: 34px;
 }
 .about-info p {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 28px;
-	letter-spacing: 0%;
 }
 .about-info img {
 	position: absolute;
@@ -197,16 +194,12 @@ p {
 	right: 0;
 	z-index: -1;
 }
-.about-btn {
-}
-.button {
-}
 .about-company {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	gap: 20px;
-	margin-top: 70px;
+	margin-top: 100px;
 }
 .about-company img {
 	filter: grayscale(100%);
@@ -232,8 +225,6 @@ p {
 .services-card a {
 	transition: 0.2s ease-in;
 }
-.services-info {
-}
 .services-info img {
 	position: absolute;
 	top: 0;
@@ -242,7 +233,6 @@ p {
 	max-width: 210px;
 	margin: auto 0;
 }
-
 .card-grey {
 	background-color: #f3f3f3;
 }
@@ -274,7 +264,6 @@ p {
 .card-dark a {
 	color: #ffffff !important;
 }
-
 .card-dark:nth-child(6) h3 > span {
 	background-color: #b9ff66;
 }
@@ -381,8 +370,6 @@ p {
 	color: #4d4d4d;
 }
 /* ACCORDION */
-.accordion {
-}
 .accordion-top p > span {
 	display: block;
 }
@@ -526,8 +513,8 @@ p {
 }
 .team-bio {
 	position: absolute;
-	bottom: 28px;
-	left: 122px;
+	bottom: 19px;
+	left: 126px;
 }
 .team-header a {
 	position: absolute;
@@ -540,7 +527,7 @@ p {
 .team-btn {
 	position: absolute;
 	margin-top: 40px;
-	right: 0;
+	right: 14px;
 	width: 269px;
 }
 
@@ -594,8 +581,8 @@ p {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-	bottom: 42px;
-	left: 6px;
+	bottom: 43px;
+	left: -7px;
 }
 .swiper-pagination {
 	margin: 10px 0px 10px 0px;
@@ -612,11 +599,11 @@ p {
 }
 .swiper-button-prev {
 	rotate: 180deg;
-	left: var(--swiper-navigation-sides-offset, 341px);
+	left: var(--swiper-navigation-sides-offset, 329px);
 	right: auto;
 }
 .swiper-button-next {
-	right: var(--swiper-navigation-sides-offset, 331px);
+	right: var(--swiper-navigation-sides-offset, 342px);
 	left: auto;
 }
 .swiper-button-prev svg:active,
@@ -657,7 +644,9 @@ p {
 }
 .contact-radio {
 	display: flex;
-	gap: 35px;
+	position: relative;
+	top: -4px;
+	gap: 37px;
 }
 .contact-radio input {
 	cursor: pointer;
@@ -683,7 +672,6 @@ p {
 	border: 1px solid black;
 	border-radius: 29px;
 }
-
 .contact-radio input[type="radio"]:checked::after {
 	content: "";
 	position: absolute;
@@ -698,9 +686,8 @@ p {
 }
 .contact-radio label {
 	display: inline-flex;
-	gap: 15px;
+	gap: 20px;
 	cursor: pointer;
-	/* margin-right: 32px; */
 	font-size: 18px;
 	line-height: 23px;
 	align-items: baseline;
@@ -711,7 +698,7 @@ p {
 .contact-text {
 	display: flex;
 	flex-direction: column;
-	margin: 43px 0px 38px 0px;
+	margin: 41px 0px 38px;
 }
 .contact-text input {
 	margin-bottom: 27px;
@@ -762,7 +749,6 @@ p {
 	color: #ffffff;
 	transition: 0.5s ease-in;
 }
-
 .footer-wrapper {
 	background-color: #191a23;
 	border-radius: 45px 45px 0px 0px;
@@ -773,9 +759,7 @@ p {
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	margin-bottom: 70px;
-}
-.footer-nav {
+	margin-bottom: 66px;
 }
 .footer-list {
 	display: flex;
@@ -787,8 +771,6 @@ p {
 .footer-list a {
 	text-decoration: underline;
 	text-underline-offset: 3px;
-}
-.footer-list a:hover {
 }
 .foooter-socials {
 	display: flex;
@@ -834,6 +816,7 @@ p {
 }
 .footer-form input {
 	width: 285px;
+	height: 67px;
 	border: 1px solid #ffffff;
 	border-radius: 14px;
 	padding: 22px 35px;
@@ -846,6 +829,7 @@ p {
 	color: #ffffff;
 }
 .footer-form button {
+	height: 67px;
 	padding: 22px 35px;
 	border-radius: 14px;
 	text-align: center;

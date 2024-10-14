@@ -1,22 +1,14 @@
 // BURGER
-// document.querySelector('.nav-burger').addEventListener('click', function () {
-// 	this.classList.toggle('nav-open');
-// 	document.querySelector('.nav').classList.toggle('open');
-// });
-// BURGER V2
 const menu = document.querySelector('.nav')
 const menuBtn = document.querySelector('.nav-burger')
-
 const body = document.body;
-
 if (menu && menuBtn) {
 	menuBtn.addEventListener('click', () => {
 		menu.classList.toggle('open')
 		menuBtn.classList.toggle('nav-open')
 		body.classList.toggle('lock')
 	})
-
-	menu.querySelectorAll('.nav-link').forEach(link => {
+	menu.querySelectorAll('.nav-list a').forEach(link => {
 		link.addEventListener('click', () => {
 			menu.classList.remove('open')
 			menuBtn.classList.remove('nav-open')
