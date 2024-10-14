@@ -425,6 +425,7 @@ p {
 	width: 25px;
 	height: 5.64px;
 	background: currentColor;
+	color: #000;
 }
 .accordion-item button .accordion-icon::after {
 	display: block;
@@ -435,6 +436,7 @@ p {
 	height: 25px;
 	width: 5.64px;
 	background: currentColor;
+	color: #000;
 }
 .accordion-item button[aria-expanded="false"] {
 	padding: 41px 60px;
