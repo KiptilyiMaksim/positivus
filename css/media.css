@@ -72,7 +72,6 @@
 	}
 	.accordion-item button:hover {
 		cursor: pointer;
-		color: #4d4d4d;
 	}
 	.team-item svg:hover {
 		fill: #f3f3f3;
@@ -421,6 +420,7 @@
 	}
 	/* SERVICES */
 	.services,
+	.studies,
 	.accordion,
 	.team {
 		margin-top: 60px;
