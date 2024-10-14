@@ -438,9 +438,11 @@ p {
 }
 .accordion-item button[aria-expanded="false"] {
 	padding: 41px 60px;
+	color: #000;
 }
 .accordion-item button[aria-expanded="true"] {
 	padding: 41px 60px 30px;
+	color: #000;
 }
 .accordion-item button[aria-expanded="true"] .accordion-icon::after {
 	width: 0;
