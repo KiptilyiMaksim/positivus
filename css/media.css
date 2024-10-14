@@ -422,7 +422,9 @@
 	.services,
 	.studies,
 	.accordion,
-	.team {
+	.team,
+	.testimonials,
+	.contact {
 		margin-top: 60px;
 	}
 	.top-basic {
