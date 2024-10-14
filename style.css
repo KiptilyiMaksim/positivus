@@ -414,6 +414,7 @@ p {
 	border: 1px solid black;
 	border-radius: 58px;
 	background-color: #f3f3f3;
+	color: #000;
 }
 .accordion-item button .accordion-icon::before {
 	display: block;
@@ -439,9 +440,7 @@ p {
 	padding: 41px 60px;
 }
 .accordion-item button[aria-expanded="true"] {
-	/* border-bottom: 1px solid black; */
 	padding: 41px 60px 30px;
-	color: #4d4d4d;
 }
 .accordion-item button[aria-expanded="true"] .accordion-icon::after {
 	width: 0;
