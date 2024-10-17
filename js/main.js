@@ -19,7 +19,7 @@ if (menu && menuBtn) {
 // STUDIES-SWIPER
 const swiperStudies = new Swiper(".studies-info", {
 	slidesPerView: "auto",
-	spaceBetween: 20,
+	spaceBetween: 20
 });
 // ACCORDEON
 const items = document.querySelectorAll(".accordion button");
@@ -39,7 +39,7 @@ function toggleAccordion() {
 }
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 // SWIPER
-const swiperTestimination = new Swiper('.testimination-swiper', {
+const swiperTestimination = new Swiper('.testimonials-swiper', {
 	// Optional parameters
 	slidesPerView: 2,
 	spaceBetween: 50,
