@@ -361,12 +361,14 @@
 	.footer-contacts {
 		align-items: center;
 		text-align: center;
-		gap: 12px;
+		gap: 37px;
 	}
 	.footer-contacts h4 {
-		margin-bottom: 22px;
 		line-height: 23px;
 		padding: 0px 2px;
+	}
+	.footer-contacts address {
+		gap: 15px;
 	}
 	.footer-contacts p > br {
 		display: block;
