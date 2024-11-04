@@ -1,35 +1,19 @@
 /* DESKTOP */
-@media (min-width: 992px) {
+@media (hover: hover) {
 	.button:hover {
 		background-color: #ffffff;
 		color: #000000;
 	}
-	.button a:active {
-		color: #ffffff;
-	}
 	/* HEADER */
-	.nav-link:after {
-		background-color: #b9ff66;
-		display: block;
-		content: "";
-		height: 2px;
-		width: 0%;
-		-webkit-transition: width 0.3s ease-in-out;
-		-moz--transition: width 0.3s ease-in-out;
-		transition: width 0.3s ease-in-out;
-	}
-	.nav-link:hover:after,
-	.nav-link:focus:after {
-		width: 65%;
-	}
 	.nav-btn:hover {
 		background-color: #191a23;
 		color: #f3f3f3;
 	}
-	.nav-btn:active {
-		box-shadow: inset 0 0 50px rgba(100, 200, 100, 0.5);
-	}
 	/* MAIN */
+	.services-card a:hover > svg,
+	.studies-item a:hover > svg {
+		transform: rotate(30deg);
+	}
 	/* SERVICES */
 	.card-dark a:hover > svg {
 		color: #a6a6a6 !important;
@@ -60,19 +44,10 @@
 		transition: 0.2s ease-in;
 	}
 	/* ACCORDION */
-	.accordion-top h2 {
-		padding: 0px 7px 0px 7px;
-		border-radius: 7px;
-		background-color: #b9ff66;
-	}
-	.accordion-top h2 > span {
-		padding: 0;
-		border-radius: unset;
-		background-color: unset;
-	}
 	.accordion-item button:hover {
 		cursor: pointer;
 	}
+	/* TEAM */
 	.team-item svg:hover {
 		fill: #f3f3f3;
 	}
@@ -95,14 +70,49 @@
 		background-color: #f3f3f3;
 	}
 }
-@media (max-width: 1239px) {
+@media (min-width: 992px) {
+	.button a:active {
+		color: #ffffff;
+	}
+	/* HEADER */
+	.nav-link:after {
+		background-color: #b9ff66;
+		display: block;
+		content: "";
+		height: 2px;
+		width: 0%;
+		-webkit-transition: width 0.3s ease-in-out;
+		-moz--transition: width 0.3s ease-in-out;
+		transition: width 0.3s ease-in-out;
+	}
+	.nav-link:hover:after,
+	.nav-link:focus:after {
+		width: 65%;
+	}
+	.nav-btn:active {
+		box-shadow: inset 0 0 50px rgba(100, 200, 100, 0.5);
+	}
+	/* MAIN */
+	/* ACCORDION */
+	.accordion-top h2 {
+		padding: 0px 7px 0px 7px;
+		border-radius: 7px;
+		background-color: #b9ff66;
+	}
+	.accordion-top h2 > span {
+		padding: 0;
+		border-radius: unset;
+		background-color: unset;
+	}
+}
+@media (max-width: 1240px) {
 	/* TEAM */
 	.team-items {
 		grid-template-columns: repeat(2, auto);
 		column-gap: 40px;
 	}
 }
-@media (max-width: 1159px) {
+@media (max-width: 1160px) {
 	h1 {
 		font-size: 54px;
 		line-height: 71px;
@@ -134,7 +144,7 @@
 		width: 100%;
 	}
 }
-@media (max-width: 1099px) {
+@media (max-width: 1100px) {
 	/* MAIN */
 	/* SERVICES */
 	.services-info img {
@@ -147,14 +157,7 @@
 	}
 }
 /* TOUCH SCREEN*/
-@media (max-width: 992px) {
-	#about,
-	#services,
-	#cases,
-	#pricing,
-	#blog {
-		scroll-margin-top: 150px;
-	}
+@media (max-width: 990px) {
 	h1 {
 		font-size: 46px;
 		line-height: 60px;
@@ -213,7 +216,30 @@
 		}
 	}
 	/* MAIN */
+	#about,
+	#services,
+	.proposel,
+	#cases,
+	#pricing,
+	.team,
+	#blog,
+	.contact,
+	.footer {
+		scroll-margin-top: 150px;
+	}
+	.main,
+	.about,
+	.services,
+	.proposel,
+	.studies,
+	.accordion,
+	.testimonials {
+		margin-bottom: 100px;
+	}
 	/* ABOUT */
+	.about-top {
+		margin-bottom: 80px;
+	}
 	.about-top img {
 		max-width: 361px;
 		max-height: 310px;
@@ -240,6 +266,9 @@
 		display: none;
 	}
 	/* PROPOSEL */
+	.proposel-wrapper {
+		padding: 0;
+	}
 	.proposel-content img {
 		position: relative;
 		width: 210px;
@@ -330,9 +359,6 @@
 		right: var(--swiper-navigation-sides-offset, 231px);
 	}
 	/* FOOTER */
-	.footer {
-		margin-top: 90px;
-	}
 	.footer a {
 		text-decoration: none;
 	}
@@ -378,17 +404,33 @@
 		gap: 35px;
 	}
 }
-@media (max-width: 761px) {
+@media (max-width: 760px) {
 	/* HAEDER */
+	.header {
+		margin-bottom: 50px;
+	}
 	.logo {
 		width: 144px;
 	}
 	/* MAIN */
+	.main,
+	.about,
+	.services,
+	.proposel,
+	.studies,
+	.accordion,
+	.testimonials {
+		margin-bottom: 80px;
+	}
 	#about,
 	#services,
+	.proposel,
 	#cases,
 	#pricing,
-	#blog {
+	.team,
+	#blog,
+	.contact,
+	.footer {
 		scroll-margin-top: 100px;
 	}
 	/* ABOUT */
@@ -413,13 +455,6 @@
 		margin: 20px 0px 40px 0px;
 	}
 	/* SERVICES */
-	.services,
-	.studies,
-	.accordion,
-	.team,
-	.contact {
-		margin-top: 60px;
-	}
 	.top-basic {
 		margin-bottom: 42px;
 	}
@@ -438,8 +473,8 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 	/* PROPOSEL */
-	.proposel {
-		margin-top: 70px;
+	.proposel-wrapper {
+		padding: 0;
 	}
 	.proposel-info {
 		max-width: 100%;
@@ -499,9 +534,6 @@
 		column-gap: 30px;
 	}
 	/* TESTIMONIALS */
-	.testimonials {
-		margin-top: 180px;
-	}
 	.testimonials-swiper {
 		padding: 30px 0px 134px 0px;
 	}
@@ -522,7 +554,7 @@
 		right: var(--swiper-navigation-sides-offset, 100px);
 	}
 }
-@media (max-width: 641px) {
+@media (max-width: 640px) {
 	/* MAIN */
 	h3 {
 		font-size: 26px;
@@ -561,8 +593,23 @@
 		padding-top: 37px;
 	}
 }
-@media (max-width: 561px) {
+@media (max-width: 560px) {
+	/* HEADER */
+	.header {
+		margin-bottom: 30px;
+	}
 	/* MAIN */
+	.main,
+	.about,
+	.about-top,
+	.services,
+	.proposel,
+	.studies,
+	.accordion,
+	.team,
+	.testimonials {
+		margin-bottom: 60px;
+	}
 	.top-basic {
 		flex-direction: column;
 		gap: 30px;
@@ -581,9 +628,6 @@
 		max-width: 100%;
 	}
 	/* SERVICES */
-	.services {
-		margin-top: 60px;
-	}
 	.services-cards {
 		grid-auto-rows: 318px;
 	}
@@ -687,9 +731,6 @@
 		width: 100%;
 	}
 	/* TESTIMONIALS */
-	.testimonials {
-		margin-top: 60px;
-	}
 	.testimonials-swiper {
 		height: 554px;
 	}
@@ -769,7 +810,7 @@
 		padding: 24px;
 	}
 }
-@media (max-width: 431px) {
+@media (max-width: 430px) {
 	/* HEADER */
 	.header {
 		padding: 20px 0;
@@ -784,9 +825,13 @@
 	}
 	#about,
 	#services,
+	.proposel,
 	#cases,
 	#pricing,
-	#blog {
+	.team,
+	#blog,
+	.contact,
+	.footer {
 		scroll-margin-top: 75px;
 	}
 	/* STUDIES */
@@ -827,7 +872,7 @@
 		padding: 40px 30px;
 	}
 }
-@media (max-width: 361px) {
+@media (max-width: 360px) {
 	.container {
 		padding: 0px 10px;
 	}
@@ -869,6 +914,7 @@
 	/* TEAM */
 	.team-items {
 		row-gap: 30px;
+		margin-bottom: 30px;
 	}
 	.team-header {
 		flex-direction: column-reverse;
@@ -881,9 +927,6 @@
 		position: static;
 		margin-bottom: 20px;
 		margin-right: 32px;
-	}
-	.team-btn {
-		margin-top: 30px;
 	}
 	/* TESTIMONIALS */
 	.testimonials-swiper {
