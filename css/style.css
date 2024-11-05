@@ -1,8 +1,10 @@
-/* COLORs
-	green	-	#B9FF66;
-	dark	-	#191A23;
-	grey	-	#F3F3F3;
-*/
+/* VARs */
+:root {
+	/* COLORS */
+	--green-color: #b9ff66;
+	--dark-color: #191a23;
+	--grey-color: #f3f3f3;
+}
 /* GENERAL (Общие) */
 html {
 	scroll-behavior: smooth;
@@ -35,7 +37,7 @@ body {
 	border: 1px solid #000;
 	border-radius: 14px;
 	text-align: center;
-	background-color: #191a23;
+	background-color: var(--dark-color);
 	color: #ffffff;
 	transition: 0.5s ease-in;
 }
@@ -59,7 +61,7 @@ h1 {
 	text-align: center;
 }
 .top-basic h2 > span {
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 	padding: 0px 7px 0px 7px;
 	border-radius: 7px;
 }
@@ -237,6 +239,10 @@ address {
 	box-shadow: 0px 5px 0px 0px rgb(25, 26, 35);
 	padding: 50px;
 }
+.services-card a > svg,
+.studies-item a > svg {
+	transition: all 0.2s ease-in;
+}
 .services-card svg {
 	width: 41px;
 	height: 41px;
@@ -250,29 +256,29 @@ address {
 	margin: auto 0;
 }
 .services-info a {
-	transition: 0.2s ease-in;
+	transition: all 0.2s ease-in-out;
 }
 .card-grey h3 > span {
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 }
 .card-green {
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 }
 .card-green h3 > span {
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 }
 .card-green svg,
 .card-grey svg {
-	fill: #b9ff66;
+	fill: var(--green-color);
 }
 .card-dark {
-	background-color: #191a23;
+	background-color: var(--dark-color);
 }
 .card-dark h3 > span {
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 }
 .card-dark svg {
-	fill: #191a23;
+	fill: var(--dark-color);
 }
 .card-dark circle {
 	fill: #ffffff;
@@ -281,10 +287,10 @@ address {
 	color: #ffffff !important;
 }
 .card-dark:nth-child(6) h3 > span {
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 }
 .card-grey {
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 }
 .services-info {
 	display: flex;
@@ -314,7 +320,7 @@ address {
 	display: flex;
 	max-height: 347px;
 	justify-content: space-between;
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 	border-radius: 45px;
 }
 .proposel-content img {
@@ -332,7 +338,7 @@ address {
 	margin-bottom: 26px;
 }
 .proposel-info button {
-	background-color: #191a23;
+	background-color: var(--dark-color);
 	padding: 20px 35px;
 	margin: 0 auto;
 	color: #ffffff;
@@ -347,7 +353,7 @@ address {
 	white-space: nowrap;
 }
 .studies-info {
-	background-color: #191a23;
+	background-color: var(--dark-color);
 	border-radius: 45px;
 }
 .studies-info > .swiper-wrapper {
@@ -378,12 +384,12 @@ address {
 }
 .studies-item a {
 	display: flex;
-	color: #b9ff66;
+	color: var(--green-color);
 	gap: 15px;
 	align-items: center;
 }
 .studies-item a > svg {
-	fill: #b9ff66;
+	fill: var(--green-color);
 	width: 21px;
 	height: 20px;
 }
@@ -403,7 +409,7 @@ address {
 	border: 1px solid rgb(25, 26, 35);
 	border-radius: 45px;
 	box-shadow: 0px 5px 0px 0px rgb(25, 26, 35);
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 	height: max-content;
 }
 .accordion-item button {
@@ -425,7 +431,7 @@ address {
 	height: 58px;
 	border: 1px solid black;
 	border-radius: 58px;
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 }
 .accordion-item button .accordion-icon::before {
 	display: block;
@@ -461,7 +467,7 @@ address {
 	max-height: inherit;
 }
 .active {
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 	transition: 0.2s ease-in-out;
 	min-height: max-content;
 }
@@ -516,7 +522,7 @@ address {
 	box-shadow: 0px 5px 0px 0px black;
 }
 .team-item svg {
-	fill: #b9ff66;
+	fill: var(--green-color);
 	transition: 0.5s ease-in;
 }
 .team-wrapper {
@@ -557,7 +563,7 @@ address {
 }
 /* TESTIMONIALS */
 .testimonials-swiper {
-	background-color: #191a23;
+	background-color: var(--dark-color);
 	color: #ffffff;
 	border-radius: 45px;
 	padding: 84px 0px 198px 0px;
@@ -568,7 +574,7 @@ address {
 	width: 606px;
 	min-height: 238px;
 	height: max-content;
-	border: 1px solid #b9ff66;
+	border: 1px solid var(--green-color);
 	border-radius: 45px;
 }
 .testimonials-slide-main::before,
@@ -578,10 +584,10 @@ address {
 	left: 56px;
 	bottom: -55px;
 	border: 27px solid transparent;
-	border-top: 29px solid #b9ff66;
+	border-top: 29px solid var(--green-color);
 }
 .testimonials-slide-main::after {
-	border-top: 29px solid #191a23;
+	border-top: 29px solid var(--dark-color);
 	bottom: -54px;
 }
 .testimonials-slide-main p {
@@ -592,7 +598,7 @@ address {
 	line-height: 1.2;
 }
 .testimonials-slide-bottom h4 {
-	color: #b9ff66;
+	color: var(--green-color);
 	font-weight: 500;
 }
 .swiper-pagination {
@@ -629,7 +635,7 @@ address {
 	clip-path: polygon(0% 0%, 50% 15%, 100% 0%, 85% 50%, 100% 100%, 100% 100%, 50% 85%, 0% 100%, 0% 100%, 15% 50%);
 }
 .swiper-pagination-bullet-active {
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -648,7 +654,7 @@ address {
 }
 .contact-main {
 	position: relative;
-	background-color: #f3f3f3;
+	background-color: var(--grey-color);
 	padding: 60px 100px 80px 100px;
 	border-radius: 45px;
 }
@@ -700,7 +706,7 @@ address {
 	width: 16px;
 	height: 16px;
 	border-radius: 29px;
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 	transform: translate(-50%, -50%);
 	visibility: visible;
 }
@@ -750,7 +756,7 @@ address {
 }
 .contact-form button {
 	width: 100%;
-	background-color: #191a23;
+	background-color: var(--dark-color);
 	padding: 20px 35px;
 	margin: 0 auto;
 	color: #ffffff;
@@ -766,7 +772,7 @@ address {
 	transition: 0.5s ease-in;
 }
 .footer-wrapper {
-	background-color: #191a23;
+	background-color: var(--dark-color);
 	border-radius: 45px 45px 0px 0px;
 	padding: 55px 60px 50px 60px;
 }
@@ -815,7 +821,7 @@ address {
 	line-height: 26px;
 	color: #000000;
 	padding: 0px 7px;
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 	border-radius: 7px;
 }
 .footer-contacts address {
@@ -853,7 +859,7 @@ address {
 	padding: 22px 35px;
 	border-radius: 14px;
 	text-align: center;
-	background-color: #b9ff66;
+	background-color: var(--green-color);
 	color: #000000;
 	transition: 0.5s ease-in;
 	border: none;
